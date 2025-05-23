@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import AllRoutes from "./routes/AllRoutes";
 import { BrowserRouter } from "react-router-dom";
 import AuthListener from "./services/AuthListener";
-
+import { Provider } from "./components/ui/provider";
 const App = () => {
   // const dispatch = useDispatch();
   // useEffect(() => {
@@ -19,8 +19,10 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <AuthListener />
-      <AllRoutes />
+      <Provider>
+        <AuthListener />
+        <AllRoutes />
+      </Provider>
     </BrowserRouter>
   );
 };
