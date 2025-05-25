@@ -8,6 +8,7 @@ export default {
         dark: "#0B192C", // For main background
         section: "#1E3E62", // For cards, navbars
         base: "#000000", // For default text
+        light:"#1E3E62",
       },
     },
   },

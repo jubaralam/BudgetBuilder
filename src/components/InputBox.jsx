@@ -1,17 +1,18 @@
 import React from "react";
 
 const InputBox = ({
+  title = "title",
   id = null,
   type = "text",
-  placeholder = "enter your text",
-  value = "value",
+  placeholder = `Enter Your ${title}`,
+  value = null,
   onChangeFunction = null,
   required = false,
 }) => {
   return (
     <div className="mb-4">
       <label htmlFor="email" className="block mb-1">
-        Email
+        {title}
       </label>
       <input
         id={id}
